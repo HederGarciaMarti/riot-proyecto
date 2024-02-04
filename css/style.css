@@ -486,8 +486,6 @@
     height: 100vh;
   }
   .main-index .grilla .grilla-hijo .link-div-footer .grilla-nieto {
-    display: flex;
-    align-items: center;
     margin: 1rem;
     height: 20vh;
   }
