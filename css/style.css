@@ -1,0 +1,620 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+/* Iniciar*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Header de todas las Paginas*/
+.header {
+  padding: 1rem;
+  background-image: linear-gradient(to left, #140f07, #10294c, #096bb4, #08b6ff, #0efff9);
+  font-family: Lemon;
+}
+.header .nav1 .logo-header {
+  height: 7vh;
+}
+.header .nav1 .logo-header:hover {
+  transform: scale(1.6);
+}
+.header .nav1 .ul1 {
+  transition: 1s;
+  text-align: center;
+}
+.header .nav1 .ul1 .rotate-hover:hover {
+  background-color: rgb(73, 137, 202);
+}
+.header .nav1 .ul1 .actived .nav-link {
+  color: rgb(172, 7, 172);
+}
+
+/*Pagina de Index*/
+.main-index {
+  background-image: url(../img/kindred.webp);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+.main-index .grilla {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 3rem;
+  gap: 2rem;
+}
+.main-index .grilla .grilla-hijo {
+  transition: 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.main-index .grilla .grilla-hijo:hover {
+  border-radius: 10px;
+  border: 2px solid white;
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+.main-index .grilla .grilla-hijo .link-div-footer {
+  color: white;
+  text-decoration: none;
+}
+.main-index .grilla .grilla-hijo .link-div-footer .grilla-nieto {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+}
+.main-index .grilla .lol {
+  background-image: url(../img/lol.png);
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.main-index .grilla .valorant {
+  background-image: url(../img/valorant.png);
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+.main-index .grilla .tft {
+  background-image: url(../img/tft.png);
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.main-index .grilla .riot {
+  background-size: cover;
+  background-position: center;
+}
+.main-index .grilla .riot a {
+  width: 100%;
+}
+
+/*Pagina de Contacto*/
+.main-index2 {
+  background-image: url(../img/kindred.webp);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+.main-index2 section .h1-titulo {
+  text-align: center;
+  padding-top: 1rem;
+  color: white;
+  font-family: Lemon;
+}
+.main-index2 section .h2-subtitulo {
+  color: white;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+.main-index2 section .ul2-section {
+  list-style-type: none;
+}
+.main-index2 section .ul2-section .li1-ul {
+  padding-bottom: 1rem;
+  color: rgb(156, 181, 214);
+}
+.main-index2 section .ul2-section .li1-ul .link-div-footer {
+  color: white;
+  text-decoration: none;
+}
+.main-index2 section .h2-subtitulo {
+  color: white;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+.main-index2 section .form-section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  max-width: 300px;
+}
+.main-index2 section .form-section .label-form {
+  color: rgb(156, 181, 214);
+  padding: 8px;
+}
+.main-index2 section .form-section .boton-enviar {
+  width: 40%;
+  margin-top: 1rem;
+}
+
+/*Pagina de Iniciar*/
+.main-iniciar {
+  background: url(../img/fondo123.png) center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+.main-iniciar .header1 .logo-header2 {
+  width: 20%;
+}
+.main-iniciar .header1 .logo-header2:hover {
+  transform: scale(1.2);
+}
+.main-iniciar .form-main {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 3px solid #345eac;
+  background-color: white;
+}
+.main-iniciar .form-main .h2-form {
+  padding-top: 1rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.main-iniciar .form-main .label-form2 {
+  padding-top: 1rem;
+  padding-inline: 1rem;
+}
+.main-iniciar .form-main .input1 {
+  margin-inline: 1rem;
+}
+.main-iniciar .form-main .div-main {
+  display: flex;
+  padding-top: 1rem;
+}
+.main-iniciar .form-main .div-main .check-input {
+  margin-left: 25px;
+  margin-bottom: 1rem;
+}
+.main-iniciar .form-main .div-main .check-label {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.main-iniciar .form-main .div-main .div-div {
+  text-align: center;
+  border-radius: 15px;
+}
+.main-iniciar .form-main .div-main .div-div .img-link {
+  width: 40%;
+}
+.main-iniciar .form-main .div-div {
+  text-align: center;
+  border-radius: 15px;
+}
+.main-iniciar .form-main .div-div .input-iniciar {
+  background-color: #345eac;
+  padding: 8px;
+  margin-bottom: 1rem;
+}
+
+.fondo-font1 {
+  background-color: #345eac;
+}
+
+.fondo-font2 {
+  background-color: white;
+}
+
+.fondo-font3 {
+  background-color: black;
+}
+
+.fondo-font4 {
+  background-color: white;
+}
+
+/*Pagina de Lol*/
+.main-lol {
+  background-image: linear-gradient(to right, #140f07, #10294c, #096bb4, #10294c, #140f07);
+  height: 100vh;
+  display: flex;
+}
+.main-lol .video {
+  width: 100%;
+  padding: 2rem;
+}
+
+/*Pagina de Sobreriot*/
+.main-sobreriot {
+  background-image: url(../img/fondolol.png);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #08b6ff;
+  background-size: cover;
+}
+.main-sobreriot .div-main1 {
+  text-align: start;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+.main-sobreriot .div-main1 .h1-titulo {
+  text-align: center;
+  padding-top: 1rem;
+  color: greenyellow;
+  font-family: Lemon;
+}
+.main-sobreriot .div-main1 .p-div2 {
+  padding: 1rem;
+  color: rgb(149, 208, 228);
+  font-family: Lemon;
+}
+
+/*Pagina de Lavidaenriot*/
+.main-lavida {
+  background-image: url(../img/vilol.png);
+  background-position: center;
+  height: 80vh;
+}
+.main-lavida .section-main {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem;
+}
+.main-lavida .section-main div .img-div {
+  width: 100%;
+}
+.main-lavida .section-main div .p-div3 {
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  padding: 4px;
+  display: inline-block;
+}
+.main-lavida .section-main div .h2-div3 {
+  color: white;
+  font-size: 5rem;
+  font-family: Lemon;
+}
+
+/*Pagina de Oficinas*/
+.main-ofi {
+  background-image: url(../img/pingui.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-ofi div .p-div3 {
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  padding: 4px;
+  display: inline-block;
+}
+.main-ofi div .h2-div3 {
+  color: white;
+  font-size: 5rem;
+  font-family: Lemon;
+}
+.main-ofi div .h21 {
+  text-align: center;
+}
+
+/*Pagina de Lol*/
+.section-contenedor0 {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to right, #140f07, #10294c, #096bb4, #10294c, #140f07);
+}
+.section-contenedor0 .section-contenedor1 .h2 {
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  font-family: Lemon;
+}
+.section-contenedor0 .section-contenedor1 .h2-div3 {
+  color: greenyellow;
+  padding-top: 2rem;
+}
+.section-contenedor0 .section-contenedor1 .div-img {
+  text-align: center;
+}
+.section-contenedor0 .section-contenedor1 .div-img .caitlyn {
+  transition: 3s;
+  width: 30%;
+}
+.section-contenedor0 .section-contenedor1 .div-img .caitlyn:hover {
+  transform: scale(1.1);
+}
+.section-contenedor0 .section-contenedor1 .div-p {
+  display: flex;
+  justify-content: center;
+  padding-block: 17px;
+  padding-inline: 3rem;
+}
+.section-contenedor0 .section-contenedor1 .div-p .p-div {
+  max-width: 1000px;
+  color: white;
+  font-family: Lemon;
+}
+.section-contenedor0 .section-contenedor {
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem;
+}
+.section-contenedor0 .section-contenedor .article-section {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.section-contenedor0 .section-contenedor .article-section .img-link {
+  width: 40%;
+}
+.section-contenedor0 .section-contenedor .article-section div .h2-div {
+  font-size: medium;
+  text-decoration: underline;
+  padding: 8px;
+}
+.section-contenedor0 .section-contenedor .article-section div .p-div {
+  font-size: 13px;
+  padding: 8px;
+  color: white;
+}
+
+/*Pagina de Lol*/
+/*Utilizo each para las 3 paginas */
+/*Lol*/
+.d-blueviolet {
+  background-color: blueviolet;
+}
+
+.d-forestgreen {
+  background-color: forestgreen;
+}
+
+.d-firebrick {
+  background-color: firebrick;
+}
+
+/*valorant*/
+.d-crimson {
+  background-color: crimson;
+}
+
+.d-darkorchid {
+  background-color: darkorchid;
+}
+
+.d-indigo {
+  background-color: indigo;
+}
+
+/*Tft*/
+.d-greenyellow {
+  background-color: greenyellow;
+}
+
+.d-darkseagreen {
+  background-color: darkseagreen;
+}
+
+.d-dimgray {
+  background-color: dimgray;
+}
+
+.section-contenedor0 .section-contenedor .article-section .img-valo {
+  width: 50%;
+}
+.section-contenedor0 .section-contenedor div .h2-div2 {
+  color: white;
+  text-decoration: none;
+}
+
+/*Pagina de Lavidaenriot*/
+.section-main {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem;
+}
+.section-main .div4 .h2-div4 {
+  text-align: center;
+  color: #08b6ff;
+}
+.section-main .div4 .p-div4 {
+  margin-block: 2rem;
+  color: white;
+}
+.section-main .div4 .agrandar {
+  font-size: 1.5rem;
+}
+.section-main .div-div2 {
+  width: 100%;
+  text-align: center;
+}
+.section-main .div-div2 .img-div2 {
+  width: 80%;
+}
+
+.sec {
+  background-image: linear-gradient(to left, rgb(36, 36, 36), rgb(71, 71, 71), rgb(71, 71, 71), rgb(36, 36, 36));
+}
+
+/*Pagina de Oficinas*/
+/*Header de todas las Paginas*/
+@media (max-width: 950px) {
+  .header .nav1 .logo-header {
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+  }
+}
+@media (max-width: 700px) {
+  .header .nav1 .logo-header {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
+}
+/*Pagina de Index*/
+@media (max-width: 950px) {
+  .main-index {
+    height: 150vh;
+  }
+  .main-index .grilla {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 550px) {
+  .main-index {
+    height: 100vh;
+  }
+  .main-index .grilla .grilla-hijo .link-div-footer .grilla-nieto {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    height: 20vh;
+  }
+}
+/*Pagina de Contacto */
+@media (max-width: 425px) {
+  .main-index2 {
+    height: 115vh;
+  }
+}
+/*Pagina de Inicar*/
+@media (max-width: 600px) {
+  .main-iniciar .header1 .logo-header2 {
+    height: 30vh;
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .main-iniciar .header1 .logo-header2 {
+    height: 40vh;
+    width: 100%;
+  }
+}
+/*Pagina de Lol*/
+@media (max-width: 995px) {
+  .section-contenedor0 .section-contenedor {
+    display: flex;
+    flex-direction: column;
+    padding-block: 2rem;
+  }
+  .section-contenedor0 .section-contenedor .article-section {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .section-contenedor0 .section-contenedor .article-section .img-link {
+    width: 20%;
+  }
+  .section-contenedor0 .section-contenedor .article-section .tft1 {
+    width: 40%;
+  }
+}
+@media (max-width: 650px) {
+  .section-contenedor0 .section-contenedor .article-section {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .section-contenedor0 .section-contenedor .article-section .tft1 {
+    width: 40%;
+  }
+}
+@media (min-width: 500px) and (max-width: 900px) {
+  .main-lol {
+    height: 70vh;
+  }
+  .main-lol .video {
+    width: 100%;
+    height: 70vh;
+  }
+}
+@media (max-width: 510px) {
+  .main-lol {
+    height: 50vh;
+  }
+  .main-lol .video {
+    width: 100%;
+    height: 50vh;
+  }
+}
+/* Lol ,tft*/
+@media (max-width: 500px) {
+  .section-contenedor0 .section-contenedor .article-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+  }
+  .section-contenedor0 .section-contenedor .article-section .img-link {
+    padding-inline: 6rem;
+    width: 100%;
+  }
+}
+/*Pagina de Valorant*/
+@media (max-width: 500px) {
+  .section-contenedor0 .section-contenedor .article-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+  }
+  .section-contenedor0 .section-contenedor .article-section .img-valo {
+    padding-inline: 6rem;
+    width: 100%;
+  }
+}
+/*Pagina de Lavidaenriot*/
+@media (max-width: 1000px) {
+  .main-lavida {
+    height: 120vh;
+    background-size: cover;
+  }
+  .section-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-main .div-div2 .img-div2 {
+    width: 60%;
+  }
+  .section-main .div-order {
+    order: 1;
+  }
+}
+@media (max-width: 900px) {
+  .main-lavida {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-lavida .section-main div .h2-div3 {
+    color: white;
+    font-size: 3.5rem;
+    font-family: Lemon;
+  }
+}
+/*Footer de todas las Paginas*/
+.footer1 {
+  background-color: #345eac;
+  text-align: center;
+}
+.footer1 .link-div-footer {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

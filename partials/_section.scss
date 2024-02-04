@@ -1,0 +1,139 @@
+/*Pagina de Lol*/
+.section-contenedor0 {
+    @include flex-colum;
+    background-image: linear-gradient(to right, #140f07, #10294c, #096bb4,#10294c,  #140f07);
+    .section-contenedor1 {
+        .h2{
+            text-align: center;
+            color: $Colorte;
+            text-decoration: underline;
+            font-family: Lemon;
+        }
+        .h2-div3 {
+            color: greenyellow;
+            padding-top: 2rem;
+        }
+        .div-img {
+            text-align: center;
+            .caitlyn {
+                transition: 3s;
+                width: 30%;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .div-p {
+            display: flex;
+            justify-content: center;
+            padding-block: 17px;
+            padding-inline: 3rem;
+            .p-div{
+                max-width: 1000px;
+                color: $Colorte;
+                font-family: Lemon;
+            }
+        }
+    }
+    .section-contenedor {
+        background-size: cover;
+        display: flex;
+        width: $maxwidth;
+        gap: 2rem;
+        padding: 2rem;
+        .article-section {
+            display: flex;
+            width: $maxwidth;
+            border: 1px solid $Colorck;
+            border-radius: 5px;
+            .img-link {
+                width: 40%;
+            }
+            div{
+                .h2-div {
+                    font-size: medium;
+                    text-decoration: underline;
+                    padding: 8px;
+                }
+                .p-div {
+                    font-size: 13px;
+                    padding: 8px;
+                    color: $Colorte;
+                }
+            }
+        }
+    }
+   
+}
+
+
+/*Pagina de Lol*/
+/*Utilizo each para las 3 paginas */
+/*Lol*/
+@each $i in blueviolet, forestgreen, firebrick {
+    .d-#{$i} {
+        background-color: $i;
+    }
+}
+/*valorant*/
+@each $i in crimson, darkorchid, indigo{
+    .d-#{$i} {
+        background-color: $i;
+    }
+}
+/*Tft*/
+@each $i in greenyellow, darkseagreen, dimgray{
+    .d-#{$i} {
+        background-color: $i;
+    }
+}
+.section-contenedor0 {
+    .section-contenedor{
+        .article-section{
+            .img-valo {
+                width: 50%;
+            }        
+        }
+        div{
+            .h2-div2 {
+                color: $Colorte;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/*Pagina de Lavidaenriot*/
+
+.section-main {
+    display: flex;
+    gap: 2rem;
+    padding: 3rem;
+    .div4 {
+        .h2-div4 {
+            text-align: center;
+            color: #08b6ff;
+        }
+        .p-div4  {
+            margin-block: 2rem;
+            color: $Colorte;
+        }
+        .agrandar {
+            font-size: 1.5rem;
+        }
+    }
+    .div-div2 {
+        width: $maxwidth;
+        text-align: center;
+        .img-div2 {
+            width: 80%;
+        }
+    }
+
+}
+.sec {
+    background-image: linear-gradient(to left, rgb(36, 36, 36), rgb(71, 71, 71),  rgb(71, 71, 71),rgb(36, 36, 36));
+}
+
+/*Pagina de Oficinas*/
+

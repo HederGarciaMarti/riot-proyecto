@@ -1,0 +1,291 @@
+/*Pagina de Index*/
+
+.main-index {
+    background-image: url(../img/kindred.webp);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    .grilla {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        padding: 3rem;
+        gap: 2rem;
+        .grilla-hijo {
+            transition: 2s;
+            @include flex-just-cent;
+            border-radius: 10px;
+            &:hover {
+                border-radius: 10px;
+                border: 2px solid $Colorte;
+                opacity: 0.9;
+                transform: scale(1.05);
+            }
+            .link-div-footer{
+                color: $Colorte;
+                text-decoration: none;
+                .grilla-nieto {
+                    height: 40vh; 
+                    display: flex;
+                    align-items: center; 
+                    color: $Colorte; 
+                    font-size: 1.5rem;
+                    
+                }
+            }
+        }
+        .lol {
+            background-image: url(../img/lol.png);
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+        
+        .valorant {
+            background-image: url(../img/valorant.png);
+            grid-column: 3/5;
+            grid-row: 1/2;
+        }
+        
+        .tft {
+            background-image: url(../img/tft.png);
+            grid-column: 2/4;
+            grid-row: 2/3;
+        }
+        
+        .riot {
+            background-size: cover;
+            background-position: center;
+            a { 
+                width: $maxwidth;
+            }
+        }
+        
+    }
+}
+
+ /*Pagina de Contacto*/
+
+.main-index2 {
+    background-image: url(../img/kindred.webp);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    section{
+        .h1-titulo {
+            text-align: center;
+            padding-top: 1rem;
+            color: $Colorte;
+            font-family: Lemon;
+        }
+        .h2-subtitulo {
+            color: $Colorte;
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+        }
+        .ul2-section {
+            list-style-type: none;
+            .li1-ul {
+                padding-bottom: 1rem;
+                color: rgb(156, 181, 214);
+                .link-div-footer{
+                    color: $Colorte;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    section{
+        .h2-subtitulo {
+            color: $Colorte;
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+        }
+        .form-section {
+            @include flex-colum;
+            padding-left: 2rem;
+            max-width: 300px; 
+            .label-form {
+                color: rgb(156, 181, 214);
+                padding: 8px;
+            }
+            .boton-enviar {
+                width: 40%;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+/*Pagina de Iniciar*/
+
+.main-iniciar {
+    background: url(../img/fondo123.png) center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    .header1{
+        .logo-header2 {
+            width: 20%;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    .form-main {
+        @include flex-colum;
+        max-width: 280px; 
+        margin: 0 auto; 
+        border-radius: 15px;
+        border: 3px solid  $Color34;
+        background-color: $Colorte;
+        .h2-form {
+            padding-top: 1rem;
+            text-align: center;
+            padding-bottom: 0.5rem;
+        }
+        .label-form2 {
+            padding-top: 1rem;
+            padding-inline: 1rem;
+        }
+        .input1 {
+            margin-inline: 1rem;
+        }
+        
+        .div-main {
+            display: flex;
+            padding-top: 1rem;
+            .check-input {
+                margin-left: 25px;
+                margin-bottom: 1rem;
+            }
+            .check-label {
+                margin-left: 1rem;
+                margin-bottom: 1rem;
+            }
+            .div-div {
+                text-align: center;
+                border-radius: 15px;
+                .img-link {
+                    width: 40%;
+                }
+            }
+            
+        }
+        .div-div {
+            text-align: center;
+            border-radius: 15px;
+                .input-iniciar {
+                background-color:  $Color34;
+                padding: 8px;
+                margin-bottom: 1rem;
+                }
+        }
+    }
+}
+
+@each $red, $color in $redes {
+    .fondo-#{$red} {
+        background-color: $color
+    }
+}
+/*Pagina de Lol*/
+
+.main-lol {
+    background-image: linear-gradient(to right, #140f07, #10294c, #096bb4,#10294c,  #140f07);
+    height: 100vh;
+    display: flex;
+    .video {
+        width: $maxwidth;
+        padding: 2rem;
+    }
+}
+
+/*Pagina de Sobreriot*/
+
+.main-sobreriot {
+    background-image: url(../img/fondolol.png);
+    background-position: center;
+    @include flex-colum;
+    text-align: center;
+    background-color: #08b6ff;
+    background-size: cover;
+    .div-main1 {
+        text-align: start;
+        max-width: 800px; 
+        margin: 0 auto;
+        padding: 1.5rem;
+        .h1-titulo {
+            text-align: center;
+            padding-top: 1rem;
+            color: greenyellow;
+            font-family: Lemon;
+        }
+        .p-div2 {
+            padding: 1rem;
+            color:rgb(149, 208, 228);
+            font-family: Lemon;
+        }
+        
+    }
+}
+
+/*Pagina de Lavidaenriot*/
+
+.main-lavida {
+    background-image: url(../img/vilol.png);
+    background-position: center;
+    height: 80vh;
+    .section-main {
+        display: flex;
+        gap: 2rem;
+        padding: 3rem;
+        div {
+            .img-div {
+                width: $maxwidth;
+            }
+        }
+        div {
+            .p-div3 {
+                border-radius: 5px;
+                background-color: $Colored;
+                color: $Colorte;
+                padding: 4px;
+                display: inline-block;
+            }
+            .h2-div3 {
+                color: $Colorte;
+                font-size: 5rem;
+                font-family: Lemon;
+            }
+        }
+    }
+    
+}
+
+/*Pagina de Oficinas*/
+
+.main-ofi {
+    background-image: url(../img/pingui.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    @include flex-just-cent;
+    div {
+        .p-div3 {
+            border-radius: 5px;
+            background-color: $Colored;
+            color: $Colorte;
+            padding: 4px;
+            display: inline-block;
+        }
+        .h2-div3 {
+            color: $Colorte;
+            font-size: 5rem;
+            font-family: Lemon;
+        }
+        .h21 {
+            text-align: center;
+        }
+    }
+}

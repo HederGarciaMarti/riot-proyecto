@@ -1,0 +1,27 @@
+/*Header de todas las Paginas*/
+
+.header {
+    padding: 1rem;
+    background-image: linear-gradient(to left, #140f07, #10294c, #096bb4,#08b6ff, #0efff9);
+    font-family: Lemon;
+    .nav1{
+        .logo-header {
+            height: 7vh;
+            &:hover {
+                transform: scale(1.6);
+            }
+        }
+        .ul1 {
+            transition: 1s;
+            text-align: center;
+            .rotate-hover:hover {
+                background-color: rgb(73, 137, 202);
+            }
+            .actived .nav-link {
+                color: rgb(172, 7, 172); 
+            }
+        }
+    }
+    
+    
+}

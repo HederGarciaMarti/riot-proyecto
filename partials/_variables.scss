@@ -1,0 +1,23 @@
+$Colored: red;
+$Colorte: white;
+$Colorck: black;
+$Color34: #345eac;
+$maxwidth: 100%;
+/* Iniciar*/
+$redes: (
+    font1: $Color34,
+    font2: $Colorte,
+    font3: $Colorck,
+    font4: $Colorte,
+);
+
+@mixin flex-just-cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-colum {
+    display: flex;
+    flex-direction: column;
+}
